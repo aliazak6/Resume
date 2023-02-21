@@ -4,18 +4,21 @@
 %====================
 \begin{center}
 	\begin{minipage}[b]{.2\textwidth}
-	\raggedright
-	{\large \phone} \\ % Phone
-	{\city} \\ % City
-	\href{mailto:\email}{\email} % Email
+	\raggedright	
+        \graphicspath{ {./images/} }
+        \includegraphics[scale=0.04]{photo.jpeg} \\
 	\end{minipage}%
 	\begin{minipage}[b]{.6\textwidth}
 	\makeatletter
-	\centering {\huge \@author} \\
+	\centering {\Huge \@author} \\
 	\makeatother
-    \vspace{.7em}
+    \vspace{3em}
 	\end{minipage}%
-	\begin{minipage}[b]{.2\textwidth}
+        \begin{minipage}[b]{.2\textwidth}
+	\raggedleft
+	{\large \phone} \\ % Phone
+	{\city} \\ % City
+	\href{mailto:\email}{\email} % Email
 	\raggedleft
 	\href{https://github.com/\github}{GitHub: \github} \\% Github
 	\href{https://www.linkedin.com/in/\LinkedIn}{LinkedIn: \LinkedIn} \\% LinkedIn
